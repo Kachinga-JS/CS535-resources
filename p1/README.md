@@ -1,7 +1,5 @@
-# cs535-f21-Kachinga-JS
-cs535-f21-Kachinga-JS created by GitHub Classroom
 
-# Project: BetterInvertedIndex
+# Project1: BetterInvertedIndex
 
 * Author: Kachinga Silwimba
 * Class: CS535 

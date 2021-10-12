@@ -30,7 +30,7 @@ Upon running the jar file, I got an error message that showed the Java software'
 <code>hadoop dfs -get output</code>
 <li>Deleting the output from the Hadoop distributed filesystem.</li>
 <code>hadoop -rm -r output</code>
-<li>Shut down the DFS servers and stop the job manager yarn.</li>
+<li>Shut down the DFS servers and stop the job manager yarn if running on a local machine.</li>
   <code>stop-dfs.sh</code> <br>
   <code>stop-yarn.sh</code>
 </ol>

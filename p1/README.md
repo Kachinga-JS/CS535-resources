@@ -39,6 +39,7 @@ The hadoop jobs where run on both cscluster00 and bugs clusters, the running tim
 <li>cscluster00 cluster = 2 minutes and 37.746 seconds</li> 
 <li>bugs cluster = 33 minutes and 17.033 seconds</li>
 </ol>
+It was oberserved that the cscluster00 was faster than the bugs cluster in running the MapReduce job for the BetterInvertedIndex.
 
 # Reference 
 - [Map-Reduce-Inverted-Index](https://github.com/imehrdadmahdavi/map-reduce-inverted-index)

@@ -13,7 +13,9 @@ This is the Java program code based on improving the already existing Inverted I
 # Reflection
 
 
-Similar Better Inverted Index java program which is the improved Inverted Index java program. During the processing of running the program ony the Onyx cluster lab by creating an Ad Hoc Hadoop cluster, I encountered challenges. Some of them are: grabbing the number of nodes to use because other classmates where running a similar job, as such you need to wait for them to reliase the nodes for scalling.
+Similar Better Inverted Index java program which is the improved Inverted Index java program. While running the program on the Onyx cluster lab by using 32 0r more Onyx nodes, one need to create the Ad Hoc Hadoop cluster. During the process of scalling the number of nodes to create the Ad Hoc Hadoop cluster for running the program, I encountered challenges. Some of them are: grabbing the number of nodes to use because other classmates were running a similar job. As such, you need to wait for them to realise the nodes for scaling.
+
+
 
 Inverted Index code to be improved was implemented this was mainly on the reducer function sums up the list of occurrence counts and emits a count for word is summed and how a tuple is emitted where the word is a string and total is an integer. To understand this, I had to do some research on Google to understand better how the Java classes used in the code works and how they can be implemented in the Eclipse software environment using the Java programming language. One of the things I learned is that the Eclipse platform makes it easy and fast to write Java programs. After implementing the reducer and the sorter I now proceeded on to test the code on the **cscluster00** using the text dataset. 
 

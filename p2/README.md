@@ -11,9 +11,7 @@ This is the Java program code based on improving the already existing Inverted I
 
 
 # Reflection
-
-
-Similar Better Inverted Index java program which is the improved Inverted Index java program. While running the program on the Onyx cluster lab by using 32 0r more Onyx nodes, one need to create the Ad Hoc Hadoop cluster. During the process of scalling the number of nodes to create the Ad Hoc Hadoop cluster for running the program, I encountered challenges. Some of them are: grabbing the number of nodes to use because other classmates were running a similar job. As such, you need to wait for them to realise the nodes for scaling.
+Similar Better Inverted Index java program which is the improved Inverted Index java program. While running the program on the Onyx cluster lab by using 32 0r more Onyx nodes, one need to create the Ad Hoc Hadoop cluster. During the process of scalling the number of nodes to create the Ad Hoc Hadoop cluster for running the program, I encountered challenges. Some of them are: finding the number of desired nodes to use because other classmates were running a similar program. As such, one need to wait for them to release the nodes for scaling. This kept me waiting for 24 hours through the waiting I kept on trying to secure the number of nodes and reaching at the point of configuring the cluster to have it running as private, then procceded with the formating of the namenode, but upon doing the admin report the live node was diplaying zero, I repeated this process several I cound not get the desired results untill Professor Amit came to my rescue by providing some Hadoop command to clean my user from all the nodes.
 
 
 

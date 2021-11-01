@@ -1,5 +1,5 @@
 
-# Project 2: Scaling up Bette Inverted Index
+# Project 2: Scaling up Better Inverted Index
 
 * Author: Kachinga Silwimba
 * Class: CS535 

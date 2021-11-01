@@ -33,14 +33,16 @@ I encountered challenges in trying to scale and run the Better Inverted Index on
 <code>hdfs namenode -format</code> <br>    
 <code>start-dfs.sh</code> <br>
 <code>hdfs dfsadmin -report</code> <br>
+    <li>Create the User</li>
+    <code>hdfs dfs -mkdir -p /user/$USER</code>
 <li> Start the resource and job manager yarn.</li>
 <code>start-yarn.sh</code> 
-<li>copy input text files to Hadoop distributed filesystem.</li>
-    <code> hdfs dfs -put input</code>
+<li>copy input text files to Hadoop distributed filesystem (e.g etext-all).</li>
+    <code> hdfs dfs -put etext-all</code>
 <li>Submitting the Hadoop job to your cluster and running hadoop job the command for running takes the jar file, the input and output. Both input and output files are **text** files for this code and requires user input.</li>
-<code>time hadoop jar BetterInvertedIndex2.jar input output</code>
-<li>Copy the output to your local folder.</li>
-<code>hadoop dfs -get output</code>
+<code>time hadoop jar BetterInvertedIndex2.jar etext-all output</code>
+<li>Copy the output.</li>
+<code>hdfs dfs -get output</code>
 <li>Deleting the output from the Hadoop distributed filesystem.</li>
 <code>hadoop -rm -r output</code>
 <li>Shut down the DFS servers and stop the job manager yarn if running on a local machine.</li>

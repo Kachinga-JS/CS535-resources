@@ -29,9 +29,11 @@ I encountered challenges in trying to scale and run the Better Inverted Index on
      <code>./findnodes.sh 50</code>
     <li>Copy the files containing the names of the worker nodes to the configuration folder.</li>
      <code>cp workers ~/hadoop-install/hadoop/etc/hadoop/slaves</code>
- <li>and start DFS server and the resource and job manager yarn if you are using hadoop on your local machine.</li>
+  <li>Format the name node and start DFS server and aslo check the status of the live nodes </li>  
+<code>hdfs namenode -format</code> <br>    
 <code>start-dfs.sh</code> <br>
 <code>hdfs dfsadmin -report</code> <br>
+<li> Start the resource and job manager yarn.</li>
 <code>start-yarn.sh</code> 
 <li>copy input text files to Hadoop distributed filesystem.</li>
     <code> hdfs dfs -put input</code>

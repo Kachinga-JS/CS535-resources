@@ -39,7 +39,7 @@ I encountered challenges in trying to scale and run the Better Inverted Index on
 <code>start-yarn.sh</code> 
 <li>copy input text files to Hadoop distributed filesystem (e.g etext-all).</li>
     <code> hdfs dfs -put etext-all</code>
-<li>Submitting the Hadoop job to your cluster and running hadoop job the command for running takes the jar file, the input and output. Both input and output files are **text** files for this code and requires user input.</li>
+<li>Submitting the Hadoop job to your cluster and running hadoop job the command for running takes the jar file, the input and output. Both input and output files are text files for this code and requires user input.</li>
 <code>time hadoop jar BetterInvertedIndex2.jar etext-all output</code>
 <li>Copy the output.</li>
 <code>hdfs dfs -get output</code>

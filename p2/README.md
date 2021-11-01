@@ -6,7 +6,7 @@
 * Semester: Fall 2021
 
 # Overview
-This is the Java program code based on improving the already existing Inverted Index MapReduce of words appearing by counting the number of times the word occurs in a given file to reduce the output and also documents with the highest count are listed first since they are likely to be more relevant of a large dataset of documents using the Hadoop MapReduce. Notably, the java program is run on the Adhoc cluster with 32 0r more onyx nodes than the time taken to run on the pseudo-distributed mode on one onyx node.
+This is the Java program code based on improving the already existing Inverted Index MapReduce of words appearing by counting the number of times the word occurs in a given file to reduce the output and also documents with the highest count are listed first since they are likely to be more relevant of a large dataset of documents using the Hadoop MapReduce. Notably, the java program is run on the Adhoc cluster with 32 0r more Onyx nodes than the time taken to run on the pseudo-distributed mode on one onyx node.
 
 
 

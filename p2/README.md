@@ -59,7 +59,4 @@ The hadoop jobs where also run on the cscluster00 and bugs clusters, the running
 </ol>
 It was observed that the more you increase the number of nodes on the Onyx node, the faster the program running time. In our instances, 50 nodes were used and compared with the running time on the cscluster00 and bugs cluster in running the MapReduce job for the Better Inverted Index. In conclusion, the more machines are used to create the Ad Hoc cluster, the higher the speed. 
 
-# Reference 
-- [Map-Reduce-Inverted-Index](https://github.com/imehrdadmahdavi/map-reduce-inverted-index)
-- [Algorithms in MapReduce](https://proserge.kh.ua/coding/index.php/post/49/Algorithms+in+MapReduce1:+Inverted+Index)
-- [Map-reduce-inverted-index-sample](https://timepasstechies.com/map-reduce-inverted-index-sample/)
+

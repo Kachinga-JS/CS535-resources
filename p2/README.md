@@ -21,9 +21,13 @@ I encountered challenges in trying to scale and run the Better Inverted Index on
 
 # Compiling and Using
 <ol>
-<li>Have Hadoop setup on the local Machine or on the cluster and have Java 1.8 installed.</li>
-<li>specify the main class while building the jar file class name BetterInvertedIndex2. Have the Java 1.8 and hadoop packages on your local machine.</li>
-<li>Start DFS server and the resource and job manager yarn if you are using hadoop on your local machine.</li>
+<li>Have Hadoop setup on the cluster and Java 1.8 installed if using Hadoop-2.10.1 installed.</li>
+<li>Compile the MapReduce application on eclipse and specify the main class while building the jar file class name BetterInvertedIndex1. Have the Java 1.8 and hadoop packages on your local machine.</li>
+<li>Navigate to the server and find the onyx node to use as master and run the setup script for distributed hdoop</li>
+    <code>./setmode.sh distributed</code>
+    <li> Find the desired number of workers nodes (e.g 50 nodes)</li>
+     <code>./findnodes.sh 50</code>
+ <li>and start DFS server and the resource and job manager yarn if you are using hadoop on your local machine.</li>
 <code>start-dfs.sh</code> <br>
 <code>hdfs dfsadmin -report</code> <br>
 <code>start-yarn.sh</code> 

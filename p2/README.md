@@ -27,6 +27,8 @@ I encountered challenges in trying to scale and run the Better Inverted Index on
     <code>./setmode.sh distributed</code>
     <li> Find the desired number of workers nodes (e.g 50 nodes)</li>
      <code>./findnodes.sh 50</code>
+    <li>Copy the files containing the names of the worker nodes to the configuration folder.</li>
+     <code>cp workers ~/hadoop-install/hadoop/etc/hadoop/slaves</code>
  <li>and start DFS server and the resource and job manager yarn if you are using hadoop on your local machine.</li>
 <code>start-dfs.sh</code> <br>
 <code>hdfs dfsadmin -report</code> <br>

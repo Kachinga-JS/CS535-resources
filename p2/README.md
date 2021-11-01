@@ -56,7 +56,7 @@ The hadoop jobs where also run on the cscluster00 and bugs clusters, the running
 <li>cscluster00 cluster = 2 minutes and 37.746 seconds</li> 
 <li>bugs cluster = 33 minutes and 17.033 seconds</li>
 <li>Onyx cluster nodes using 50 nodes = 0.42155 seconds</li>
-    <li>Onyx cluster nodes using 1 node = 10.043 minutes </li>
+    <li>Onyx cluster nodes using 1 node = 10.3328 minutes </li>
 </ol>
 It was observed that the more you increase the number of nodes on the Onyx node, the faster the program running time. In our instances, 50 nodes were used and compared with the running time on the cscluster00 and bugs cluster in running the MapReduce job for the Better Inverted Index. In conclusion, the more machines are used to create the Ad Hoc cluster, the higher the speed. 
 

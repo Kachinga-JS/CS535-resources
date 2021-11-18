@@ -12,6 +12,7 @@ first challenge I encountered was to find the efficient, resilient distributed d
 # Compiling and Running
 <ol>
 <li>Have Spark and Hadoop setup on the local Machine or on the cluster and also have Python installed.</li>
+ <li>Compile the file into a <code>.py</code> using Python software </li>
 <li>Staging the input text files to Hadoop distributed filesystem (HDFS).</li>
  <code> hdfs dfs -put etext-all input</code>
 <li>Submitting the Pyspark job to your cluster (bugs and cscluster00) and running pyspark job the command for running takes the jar file, the input and output. Both input and output files are *text* files for this code and requires user input.</li>

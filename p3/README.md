@@ -12,16 +12,22 @@ first challenge I encountered was to find the efficient, resilient distributed d
 # Compiling and Running
 <ol>
 <li>Have Spark and Hadoop setup on the local Machine or on the cluster and also have Python installed.</li>
-<li>copy input text files to Hadoop distributed filesystem.</li>
- <code> hdfs dfs -put input</code>
+<li>Staging the input text files to Hadoop distributed filesystem (HDFS).</li>
+ <code> hdfs dfs -put etext-all input</code>
 <li>Submitting the Pyspark job to your cluster (bugs and cscluster00) and running pyspark job the command for running takes the jar file, the input and output. Both input and output files are **text** files for this code and requires user input.</li>
-<code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://localhost:9000/user/kachingasilwimba/input</code> 
-<code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://cscluster00.boisestate.edu:9000/user/kachingasilwimba/input</code>
+<code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://localhost:9000/user/kachingasilwimba/input </code> </br>
+<code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://cscluster00.boisestate.edu:9000/user/kachingasilwimba/input </code>
  <li>Copy the output from the hdfs.</li>
 <code>hdfs dfs -get output</code>
 </ol>
   
- 
- 
-# Results 
-By applying a mix of RDD, I managed to further reduce runtime.
+# Results
+The Spark Jobs were run on both cscluster00 and bugs cluster and compared the runtime of the MapReduce jobs which where run also on both cscluster00 and bugs clusters, the running time's observed are: 
+
+<ol>
+<li>Spark Job on Bug cluster = 2 minutes and 47seconds</li>
+<li>Spark Job on cscluster00 cluster = 3 minutes and 40 seconds</li>
+<li> MapReduce Job on cscluster00 cluster = 2 minutes and 37 seconds</li> 
+<li>MapRduce Job on bugs cluster = 33 minutes and 17 seconds</li>
+</ol>
+It was oberserved that the cscluster00 was faster than the bugs cluster in running the MapReduce job for the BetterInvertedIndex.

@@ -30,4 +30,4 @@ The Better Inverted Index Spark Job was run on both cscluster00 and bugs cluster
 <li> MapReduce Job on cscluster00 cluster = 2 minutes and 37 seconds</li> 
 <li>MapRduce Job on bugs cluster = 33 minutes and 17 seconds</li>
 </ol>
-It was oberserved that the cscluster00 was faster than the bugs cluster in running the MapReduce job for the BetterInvertedIndex.
+It was oberserved that the cscluster00 was faster than the bugs cluster in running both Spark and MapReduce Better Inverted Index job.

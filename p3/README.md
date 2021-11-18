@@ -6,25 +6,21 @@
 * Semester: Fall 2021
 
 # Overview
-This is the python program code is based on improving the already existing Inverted Index MapReduce of words appearing by counting the number of times the word occurs in a given file to reduce the output and also documents with highest count are listed first since they are likely to be more relevant of a large dataset of documents using Pyspark.
+This is the pyspark program code is based on improving the already existing Inverted Index MapReduce of words appearing by counting the number of times the word occurs in a given file to reduce the output and also documents with highest count are listed first since they are likely to be more relevant of a large dataset of documents using Pyspark.
 # reflection 
 first challenge I encountered was to find the efficient, resilient distributed datasets (RDD), which are fundamental data structures of Spark to implement on the Better Inverted Index program in python to analyze a large dataset. During this stage, I understood that performance tuning takes more time and effort to comprehend the job's input data, how Spark interacts with the cluster setups, and what the application code aims to accomplish. I tried different data shuffle operations like groupBykey, aggregateBykey they demonstrated to slow down the performance (runtime). Hence I resorted to using reduceBykey, which combine keys in each partition before shuffling data globally. The other challenge I faced was during the application test, which was done using a smaller and large dataset. At first the code often failed, got stuck, and sometimes took long time to finish, but ended up printing the error message. Doing some improvements on the code I managed to run it using a smaller dataset. Surprising, when I implemented it on the large data, the code was unable to run. Hence, I had to explore other alternatives that could improve the applicatian.
 # Compiling and Running
-
-
-
 <ol>
-<li>Have PySpark and Hadoop setup on the local Machine or on the cluster and also have Python installed.</li>
+<li>Have Spark and Hadoop setup on the local Machine or on the cluster and also have Python installed.</li>
 <li>copy input text files to Hadoop distributed filesystem.</li>
  <code> hdfs dfs -put input</code>
 <li>Submitting the Pyspark job to your cluster (bugs and cscluster00) and running pyspark job the command for running takes the jar file, the input and output. Both input and output files are **text** files for this code and requires user input.</li>
-<code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://localhost:9000/user/kachingasilwimba/input</code>
-  
+<code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://localhost:9000/user/kachingasilwimba/input</code> 
 <code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://cscluster00.boisestate.edu:9000/user/kachingasilwimba/input</code>
- <li>Copy the output to your local folder.</li>
+ <li>Copy the output from the hdfs.</li>
 <code>hdfs dfs -get output</code>
 </ol>
-
+  
  
  
 # Results 

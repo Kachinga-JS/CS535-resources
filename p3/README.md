@@ -14,7 +14,7 @@ first challenge I encountered was to find the efficient, resilient distributed d
 <li>Have Spark and Hadoop setup on the local Machine or on the cluster and also have Python installed.</li>
 <li>Staging the input text files to Hadoop distributed filesystem (HDFS).</li>
  <code> hdfs dfs -put etext-all input</code>
-<li>Submitting the Pyspark job to your cluster (bugs and cscluster00) and running pyspark job the command for running takes the jar file, the input and output. Both input and output files are **text** files for this code and requires user input.</li>
+<li>Submitting the Pyspark job to your cluster (bugs and cscluster00) and running pyspark job the command for running takes the jar file, the input and output. Both input and output files are *text* files for this code and requires user input.</li>
 <code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://localhost:9000/user/kachingasilwimba/input </code> </br>
 <code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://cscluster00.boisestate.edu:9000/user/kachingasilwimba/input </code>
  <li>Copy the output from the hdfs.</li>
@@ -22,7 +22,7 @@ first challenge I encountered was to find the efficient, resilient distributed d
 </ol>
   
 # Results
-The Spark Job was run on both cscluster00 and bugs clusters and compared with the MapReduce job runtime, which was also run on both cscluster00 and bugs clusters. The running time's observed are:
+The Better Inverted Index Spark Job was run on both cscluster00 and bugs clusters and compared with the MapReduce job runtime, which was also run on both cscluster00 and bugs clusters. The running time's observed are:
 
 <ol>
 <li>Spark Job on Bug cluster = 9 minutes and 27 seconds</li>

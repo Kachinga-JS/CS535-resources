@@ -22,10 +22,10 @@ first challenge I encountered was to find the efficient, resilient distributed d
 </ol>
   
 # Results
-The Spark Jobs were run on both cscluster00 and bugs cluster and compared the runtime of the MapReduce jobs which where run also on both cscluster00 and bugs clusters, the running time's observed are: 
+The Spark Job was run on both cscluster00 and bugs clusters and compared with the MapReduce job runtime, which was also run on both cscluster00 and bugs clusters. The running time's observed are:
 
 <ol>
-<li>Spark Job on Bug cluster = 2 minutes and 47seconds</li>
+<li>Spark Job on Bug cluster = 9 minutes and 27 seconds</li>
 <li>Spark Job on cscluster00 cluster = 3 minutes and 40 seconds</li>
 <li> MapReduce Job on cscluster00 cluster = 2 minutes and 37 seconds</li> 
 <li>MapRduce Job on bugs cluster = 33 minutes and 17 seconds</li>

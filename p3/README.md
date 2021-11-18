@@ -29,5 +29,5 @@ The Better Inverted Index Spark Job was run on both cscluster00 and bugs cluster
 <li>Spark Job on cscluster00 cluster = 3 minutes and 40 seconds</li>
 <li> MapReduce Job on cscluster00 cluster = 2 minutes and 37 seconds</li> 
 <li>MapRduce Job on bugs cluster = 33 minutes and 17 seconds</li>
-</ol>
-It was oberserved that the cscluster00 was faster than the bugs cluster in running both Spark and MapReduce Better Inverted Index job. In trying to beat MapReduce Job on the cscluster00 I tried to implement different RDD on the Spark program Unfortunately I coundn't beat the runtime for the MapReduce on the cscluster00.
+</ol></br>
+It was observed that the cscluster00 was faster than the bugs cluster in running both Spark and MapReduce Better Inverted Index job. In trying to beat MapReduce Job on the cscluster00, I tried to implement different RDD on the Spark program. Unfortunately, I couldn't beat the runtime for MapReduce on the cscluster00.

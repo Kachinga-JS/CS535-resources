@@ -38,4 +38,4 @@ It was observed that the cscluster00 was faster than the bugs cluster in running
 # Reference 
 - [Spark-Inverted-Index](https://github.com/Kachinga-JS/PySpark_tutorial)
 - [RDD Algorithms](https://kaizen.itversity.com/courses/hdpcsd-hdp-certified-spark-developer-hdpcsd-python/lessons/hdpcsd-apache-spark-2-core-apis-python/topic/hdpcsd-basic-transformations-and-actions-python/)
-- 
+

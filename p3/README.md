@@ -8,4 +8,6 @@
 # Overview
 This is the python program code is based on improving the already existing Inverted Index MapReduce of words appearing by counting the number of times the word occurs in a given file to reduce the output and also documents with highest count are listed first since they are likely to be more relevant of a large dataset of documents using Pyspark.
 # reflection 
-During the testing of the code, I had multiple incidents of Spark crashes due
+During the testing of the code, I had multiple incidents with Spark. The first challenge I encountered was to find the suitable resilient distributed datasets (RDD), which are fundamental data structures of Spark to implement on the Better Inverted Index program in python.
+
+

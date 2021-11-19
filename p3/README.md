@@ -25,6 +25,8 @@ Furthermore, during the preparation of the Spark program some of the things went
 <code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://cscluster00.boisestate.edu:9000/user/kachingasilwimba/input </code>
  <li>Copy the output from the hdfs.</li>
 <code>hdfs dfs -get output</code>
+ <li>Deleting the output from the hdfs.</li>
+<code>hdfs dfs -rm -r output</code>
 </ol>
   
 # Results

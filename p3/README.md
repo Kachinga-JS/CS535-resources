@@ -11,7 +11,7 @@ This is the pyspark program code is based on improving the already existing Inve
 During the code part the first challenge I encountered was to find the efficient, resilient distributed datasets (RDD), which are fundamental data structures of Spark to implement on the Better Inverted Index program in python to analyze a large dataset. During this stage, I understood that performance tuning takes more time and effort to comprehend the job's input data, how Spark interacts with the cluster setups, and what the application code aims to accomplish. I tried different data shuffle operations like groupBykey, aggregateBykey they demonstrated to slow down the performance (runtime). Hence I resorted to using reduceBykey, which combine keys in each partition before shuffling data globally. The other challenge I faced was during the application test, which was done using a smaller and large dataset. At first the code often failed, got stuck, and sometimes took long time to finish, but ended up printing the error message. Doing some improvements on the code I managed to run it using a smaller dataset. Surprising, when I implemented it on the large data, the code was unable to run. Hence, I had to explore other alternatives that could improve the applicatian. After several attempts to improve the program I finally got the Spark program running.
 
 
-Furthermore, during the preparation of the Spark program some of the things went well while some didn't
+Furthermore, during the preparation of the Spark program some of the things went well while some didn't. Part of the things that didn't go well are looking out for the 
 
 # Compiling and Running
 <ol>

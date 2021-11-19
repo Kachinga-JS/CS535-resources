@@ -34,7 +34,7 @@ The Better Inverted Index Spark Job was run on both cscluster00 and bugs cluster
 
 <ol>
 <li>Python Spark Job on Bug cluster using 80 partitions = 5 minutes and 42 seconds</li>
-<li>Python Spark Job on cscluster00 cluster using 80 partitions = 0 minutes and 448 seconds</li>
+<li>Python Spark Job on cscluster00 cluster using 80 partitions = 0 minutes and 48 seconds</li>
 <li> MapReduce Job on cscluster00 cluster = 2 minutes and 37 seconds</li> 
 <li>MapRduce Job on bugs cluster = 33 minutes and 17 seconds</li>
 </ol></br>

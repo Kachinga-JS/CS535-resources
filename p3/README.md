@@ -11,7 +11,7 @@ This is the pyspark program code is based on improving the already existing Inve
 During the code part the first challenge I encountered was to find the efficient, resilient distributed datasets (RDD), which are fundamental data structures of Spark to implement on the Better Inverted Index program in python to analyze a large dataset. During this stage, I understood that performance tuning takes more time and effort to comprehend the job's input data, how Spark interacts with the cluster setups, and what the application code aims to accomplish. I tried different data shuffle operations like groupBykey, aggregateBykey they demonstrated to slow down the performance (runtime). Hence I resorted to using reduceBykey, which combine keys in each partition before shuffling data globally. The other challenge I faced was during the application test, which was done using a smaller and large dataset. At first the code often failed, got stuck, and sometimes took long time to finish, but ended up printing the error message. Doing some improvements on the code I managed to run it using a smaller dataset. Surprising, when I implemented it on the large data, the code was unable to run. Hence, I had to explore other alternatives that could improve the applicatian. After several attempts to improve the program I finally got the Spark program running.
 
 
-
+Furthermore, during the preparation of the Spark program some of the things went well while some didn't
 
 # Compiling and Running
 <ol>
@@ -31,12 +31,12 @@ During the code part the first challenge I encountered was to find the efficient
 The Better Inverted Index Spark Job was run on both cscluster00 and bugs clusters and compared with the MapReduce job runtime, which was also run on both cscluster00 and bugs clusters. The running time's observed are:
 
 <ol>
-<li>Python Spark Job on Bug cluster = 9 minutes and 27 seconds</li>
-<li>Python Spark Job on cscluster00 cluster = 3 minutes and 40 seconds</li>
+<li>Python Spark Job on Bug cluster using 80 partitions = 5 minutes and 42 seconds</li>
+<li>Python Spark Job on cscluster00 cluster using 80 partitions = 0 minutes and 448 seconds</li>
 <li> MapReduce Job on cscluster00 cluster = 2 minutes and 37 seconds</li> 
 <li>MapRduce Job on bugs cluster = 33 minutes and 17 seconds</li>
 </ol></br>
-It was observed that the cscluster00 was faster than the bugs cluster in running both Spark and MapReduce Better Inverted Index job. In trying to beat MapReduce Job on the cscluster00, I tried to implement different RDD on the Spark program. Unfortunately, I couldn't beat the runtime for MapReduce on the cscluster00.
+It was observed that the cscluster00 was faster than the bugs cluster in running both Spark and MapReduce Better Inverted Index job. In trying to beat MapReduce Job on the cscluster00, I tried to implement different RDD on the Spark program. Fortunately, I managed to beat the runtime for MapReduce on the cscluster00.
 
 # Reference 
 - [Spark-Inverted-Index](https://github.com/Kachinga-JS/PySpark_tutorial)

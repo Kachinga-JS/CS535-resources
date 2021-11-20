@@ -39,7 +39,7 @@ The Better Inverted Index Spark Job was run on both cscluster00 and bugs cluster
 <li>Python Spark Job on cscluster00 cluster using 80 partitions = 0 minutes and 48 seconds</li>
 <li> MapReduce Job on cscluster00 cluster = 2 minutes and 37 seconds</li> 
 </ol></br>
-It was observed that the cscluster00 was faster than the bugs cluster in running both Spark and MapReduce Better Inverted Index job. In trying to beat MapReduce Job on the cscluster00, I tried to implement different RDD on the Spark program. Fortunately, I managed to beat the runtime for the Better Inverted Index MapReduce program on the cscluster00.
+It was observed that the cscluster00 was faster than the bugs cluster in running both Spark and MapReduce Better Inverted Index job. In trying to beat MapReduce Job on the cscluster00, I tried to implement different RDD on the Spark program. Fortunately, I managed to beat the runtime for the Better Inverted Index MapReduce program on the cscluster00 for project 1.
 
 # Reference 
 - [Spark-Inverted-Index](https://github.com/Kachinga-JS/PySpark_tutorial)

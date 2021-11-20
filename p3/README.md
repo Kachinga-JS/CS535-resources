@@ -22,7 +22,8 @@ Furthermore, during the preparation of the Spark program some of the things went
  
 <li>Submitting the Pyspark job to your cluster (bugs and cscluster00) and running pyspark job the command for running takes the Python Spark file and use Spark to run using HDFS. Both input and output files are *text* files for this code and requires user input.</li>
 <code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://localhost:9000/user/kachingasilwimba/input </code> </br>
-<code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://cscluster00.boisestate.edu:9000/user/kachingasilwimba/input </code>
+<code> time spark-submit --master local[*] betterinvertedindexwc.py hdfs://cscluster00.boisestate.edu:9000/user/kachingasilwimba/input</code>
+
  <li>Copy the output from the hdfs.</li>
 <code>hdfs dfs -get output</code>
  <li>Deleting the output from the hdfs.</li>

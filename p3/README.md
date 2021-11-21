@@ -17,6 +17,8 @@ Furthermore, during the preparation of the Spark program, some of the things wen
 <ol>
 <li>Have Spark and Hadoop setup on the local Machine or on the cluster and also have Python installed.</li>
  <li>Compile the Better Inverted Index Python file into a <code>.py</code> and also specify the number of partitions to improve the perfomance.</li>
+ <li> The output is specifified in the <code>.py</code> </li>
+ 
 <li>Staging the large input text files to Hadoop distributed filesystem (HDFS).</li>
  <code> hdfs dfs -put etext-all input</code>
  

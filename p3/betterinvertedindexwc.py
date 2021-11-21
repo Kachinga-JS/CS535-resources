@@ -23,7 +23,7 @@ stdin = open(sys.stdin.fileno(), encoding='iso-8859-1', mode='r')
 
 spark = SparkSession.builder.appName("BetterInvertedIndex").getOrCreate()
 sc = SparkContext.getOrCreate(conf=spark)
-text_rdd = sc.wholeTextFiles("hdfs://localhost:9000/user/kachingasilwimba/input, 80")
+text_rdd = sc.wholeTextFiles("hdfs://cscluster00.boisestate.edu:9000/user/kachingasilwimba/input, 80")
 
 def Better_inverted_index(documents):
   documents1 = documents.map(lambda x: ([(r, Path(x[0]).name) for r in x[1].split()] )).flatMap(lambda x:x).groupByKey().map(lambda x: (x[0], list(x[1])))

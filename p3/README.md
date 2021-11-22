@@ -31,7 +31,7 @@ Furthermore, during the preparation of the Spark program, some of the things wen
 <code>hdfs dfs -get output</code>
  <li>Deleting the output from the hdfs.</li>
 <code>hdfs dfs -rm -r output</code>
-<li> Combining the 80 output partitions</li>
+<li> Combining the 80 output partitions and reading file.</li>
 <code>cat part-00000*</code>
 </ol>
   
